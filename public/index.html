@@ -3,10 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0"">
+    <meat name="apple-mobile-web-app-capable" content="yes"></meat>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>hbgzh</title>
+    <title>海博科技</title>
   </head>
+  <style>
+  .el-message-box{
+    width: 80% !important;
+    height: 20% !important;
+    position: relative !important;
+    font-size: 16px !important;
+    
+  }
+  /* .el-message-box__title{
+    position: absolute;
+    top: 56%;
+    left: 40%;
+  } */
+  .el-message-box__title span{
+    font-size: 16px
+  }
+  .el-message-box__btns{
+      position: absolute;
+      bottom: 15px;
+      left: 34%;
+    }
+    .el-button{
+      height: 30px;
+      font-size: 14px;
+      line-height: 13px;
+    }
+  </style>
   <body>
     <noscript>
       <strong>We're sorry but hbgzh doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>

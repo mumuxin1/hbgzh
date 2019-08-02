@@ -2,16 +2,16 @@
   @return ($px / 750) * 100vw;
 }
 @function vh($px) {
-  @return ($px / 1334) * 100vw;
+  @return ($px / 1334) * 100vh;
 }
 .button-g {
 	border-radius: vw(5);
 	background-color: #2d9efd
 }
-.el-select-dropdown__item{
-  height: vw(64) !important;
-  span{
-
-  height: vw(64) !important;
-  }
+.disabled {
+  background: #d2d5d8;
+  opacity: .8;
+}
+.abled{
+  background: #2d9efd;
 }

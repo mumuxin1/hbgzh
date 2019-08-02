@@ -13,7 +13,7 @@
       </div>
       <div class="head-right" v-if="right">
         <slot name="setRight"></slot>
-        <div class="icon" v-if="icon" @click="$router.back()">
+        <div class="icon" v-if="icon" @click="logOut">
           <img src="../assets/切换账号@3x.png" />
         </div>
       </div>
@@ -25,6 +25,8 @@
   </div>
 </template>
 <script>
+  import { STROAGE } from '@/utils/muxin'
+
 export default {
   name: 'Muheader',
   props: {
@@ -52,7 +54,16 @@ export default {
       type: String,
       default: ''
     }
-  }
+  },
+  methods: {
+    logOut () {
+      console.log('ss')
+      this.$router.push('/')
+      STROAGE({
+        type: 'clear'
+      })
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -94,10 +105,12 @@ export default {
 
   }
   .head-center {
-    width: 100%;
+    width: 80%;
     height: vw(85);
+    margin: 0 auto;
     position: absolute;
     top: 0;
+    left: 10%;
     line-height: vw(85);
     color: white;
     font-size: vw(36)
