@@ -4,14 +4,14 @@
     <div class="content1">
       <div class="opt">
         <span>商家代理</span>
-        <el-select v-model="proxyName.label" placeholder="请选择商家代理" filterable class="sel" @change="chang(proxyName.label)" size="mini">
+        <el-select v-model="proxyName.label" placeholder="请选择商家代理" filterable class="sel" @change="chang(proxyName.label)" size="small">
           <el-option v-for="item in proxyOptions" :key="item.value" :label="item.label" :value="item.value">
           </el-option>
         </el-select>
       </div>
       <div class="opt">
         <span>店&#12288&#12288铺</span>
-        <el-select v-model="shopName.label" placeholder="请选择店铺" clearable class="sel" @change="shop(shopName.label)">
+        <el-select v-model="shopName.label" placeholder="请选择店铺" clearable class="sel" @change="shop(shopName.label)" size="small">
           <el-option v-for="item in shopOptions" :key="item.value" :label="item.label" :value="item.value">
           </el-option>
         </el-select>
@@ -227,7 +227,8 @@
   }
 </script>
 <style lang="scss">
-  @import '../../styles/mix.scss'; // @import '../../styles/select.css';
+  @import '../../styles/mix.scss'; 
+  // @import '../../styles/select.css';
   // @import '../../../node_modules/element-ui/lib/theme-chalk/index.css';
   .details {
     width: 100%;
@@ -261,28 +262,28 @@
           text-align: left;
         }
         /deep/ .sel {
-          flex: 8;
-          height: vw(64); // border-radius: vw(3);
+          // flex: 8;
+          // height: vw(64); // border-radius: vw(3);
           // border: vw(1) solid #d1d1d1;
 
-          .el-input {
-            height: vw(60);
-            line-height: vw(60);
-            font-size: vw(24);
+          // .el-input {
+          //   height: vw(60);
+          //   line-height: vw(60);
+          //   font-size: vw(24);
 
-            .el-input__inner {
-              height: vw(60);
-              line-height: vw(60);
-              margin-top: vw(1);
-              margin-right: vw(1);
-              background: #f5f5f5;
+          //   .el-input__inner {
+          //     height: vw(60);
+          //     line-height: vw(60);
+          //     margin-top: vw(1);
+          //     margin-right: vw(1);
+          //     background: #f5f5f5;
 
-            }
-          }
-          .el-input__suffix-inner{
-            // position: relative;
-            top: -10px;
-          }
+          //   }
+          // }
+          // .el-input__suffix-inner{
+          //   // position: relative;
+          //   top: -10px;
+          // }
         }
       }
       .selectDate {
@@ -310,7 +311,8 @@
               margin-top: vw(1);
               margin-right: vw(1);
               // margin-left: vw(5)
-              padding-left: vw(40)
+              padding-left: vw(60);
+              padding-right: vw(0)
             }
             .el-input__prefix {
               position: absolute;
@@ -367,13 +369,13 @@
   //   max-width: 300px !important;
   //   min-width: 256px !important;
   // }
-  .el-select-dropdown__item {
-    height: vw(64) !important;
-    span {
-      line-height: vw(64) !important;
-      height: vw(64) !important;
-    }
-  }
+  // .el-select-dropdown__item {
+  //   height: vw(64) !important;
+  //   span {
+  //     line-height: vw(64) !important;
+  //     height: vw(64) !important;
+  //   }
+  // }
   // datePicker element
   // .el-select-dropdown {
   //   width: 94%;

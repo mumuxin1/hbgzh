@@ -161,7 +161,8 @@
   }
 </script>
 <style lang="scss">
-  @import '../../styles/mix.scss'; // @import '../../styles/select.css';
+  @import '../../styles/mix.scss'; 
+  // @import '../../styles/select.css';
   // @import '../../../node_modules/element-ui/lib/theme-chalk/index.css';
   .join {
     width: 100%;
